@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="http://daigofuji.github.io/bbclub-font/css/bbclub-font.css">
+    <style>
+        html,
+        body {
+            position: fixed;
+            height: 100%;
+            width: 100%;
+        }
+
+        #map {
+            position: absolute;
+            right: 0;
+            height: 100%;
+            width: 80%;
+        }
+
+        #sidebar {
+            position: fixed;
+            width: 20%;
+            overflow-y: auto;
+            top: 0;
+            bottom: 0;
+        }
+
+        p,
+        h1 {
+            text-align: center;
+        }
+        i{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="sidebar">
+        <h1>SPORTS STADIUMS</h1>
+        <p>click on a <i id="mlb" class="bbclub-mlb"></i> logo to see marker</p>
+
+    </div>
+    <div id="map"></div>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=add_urs_here"></script>
+    <script src="map2.js"></script>
+</body>
+
+</html>
